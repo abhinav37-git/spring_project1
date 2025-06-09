@@ -1,0 +1,1 @@
+Java Full Stack Application following spring boot 6, and postgreSQL 16 as a the database. Common gaming apps requesting multiple beans and resolving apis in real time.
