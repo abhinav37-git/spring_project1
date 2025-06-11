@@ -1,27 +1,23 @@
 package com.example.demo;
 
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class HelloWorldConfiguration {
 
     @Bean
-    public Person person(){
+    public Address address() {
+        return new Address("Chandigarh", "India");
     }
 
     @Bean
-    public Public person2MethodCall(){
+    public Person person() {
+        return new Person("Abhinav", 23, address());
     }
 
     @Bean
-    public Address address(){
-
+    public String person2MethodCall() {
+        return "This is another method, possibly used for demo.";
     }
-
-    @Bean
-    public String address2(){
-
-    }
-
 }
