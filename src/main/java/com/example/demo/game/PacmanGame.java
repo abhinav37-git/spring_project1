@@ -1,4 +1,1 @@
-package com.example.demo.game;
-
-public class PacmanGame {
-}
+package com.example.demo.game;import org.springframework.stereotype.Component;public class PacmanGame implements GamingConsole {    }
